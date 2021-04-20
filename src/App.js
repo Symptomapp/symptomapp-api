@@ -7,15 +7,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          This will be the <code>backend</code> for <strong>Symptomapp</strong> project.
         </p>
-        <a
+         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/Symptomapp"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          <i class="fab fa-github"> </i> Symptomapp on Github
         </a>
       </header>
     </div>

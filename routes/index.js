@@ -67,32 +67,15 @@ router.post('/auth/login', (req, res, next) => {
     })
 })
 
-// router.post('/auth/login', (req, res, next) => {
-//   const { email, password } = req.body
-//   User.find({
-//     email: email
-//   })
-//   .then(user => {
-//     if (user.length > 0) {
-//       console.log('user found');
-//       user.checkPassword(password)
-//       .then(match => {
-//         console.log('CHECK')
-//       })
-//       .catch(err => {
-//         console.log('NOTCHECK')
-//       })
-//     }
-//     else {console.log('user not found'); res.json(user)}
-//     })
-//   .catch(err => {
-//     res.json(err);
-//   });
-// })
-
-router.get('/auth/singup', (req, res, next) => {
-
-})
+router.get('/users/delete/:id/:token', (req, res, next) => {
+  User.findOneAndRemove({_id: req.params.id, token: req.params.token})
+    .then(user => {
+      res.json(user)
+    })
+    .catch(err => {
+      res.json(err);
+    });
+});
 
 router.post('/auth/singup', (req, res, next) => {
   const { email, password, name, surname, picture, sex, city, age } = req.body;
@@ -120,9 +103,26 @@ router.post('/auth/upload', (req, res, next) => {
   
 })
 
-router.post('/auth/edit', (req, res, next) => {
+router.post('/users/edit/:id/:token', (req, res, next) => {
   
-})
+  const { email, name, surname, picture, sex, city, age } = req.body;
+
+  User.findOneAndUpdate({ _id: req.params.id, token: req.params.token}, {
+    email: email,
+    name: name, 
+    surname: surname, 
+    picture: picture,
+    sex: sex,
+    city: city,
+    age: age,
+  },)
+    .then(user => {
+      res.json(user)
+    })
+    .catch(err => {
+      res.json(err);
+    });
+});
 
 router.post('/auth/logout', (req, res, next) => {
   

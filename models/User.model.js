@@ -50,7 +50,8 @@ const userSchema = new Schema({
           }
         },
         message: () => 'Invalid image URL.'
-      }
+      },
+      default: 'https://miro.medium.com/max/3150/1*NFwzjjur2atssvIlGia0AQ.jpeg'
     },
   token: {
   type: String

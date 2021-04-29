@@ -1,3 +1,5 @@
+![symptomapp](https://i.imgur.com/h2eOzIN.gif)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

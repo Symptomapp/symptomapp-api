@@ -3,6 +3,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f1f1;
 }
 
 code {
@@ -12,6 +13,7 @@ code {
 
 .App {
   text-align: center;
+  background-color: #f8f1f1;
 }
 
 .App-logo {

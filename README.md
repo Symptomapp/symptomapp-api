@@ -1,72 +1,66 @@
-![symptomapp](https://i.imgur.com/h2eOzIN.gif)
+# Symptomapp
 
-# Getting Started with Create React App
+<div align="center">
+  <img src="https://github.com/Symptomapp/symptomapp-web/blob/master/src/rotating_logo.gif?raw=true" />
+  <p>[ http://www.symptomapp.info ]</p>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### About
 
-## Available Scripts
+Medical symptom checker web app for anyone. Based on the entered symptoms it tells you what possible diseases you may have. It directs you to more medical information and shows you the right doctor for further clarifications.
 
-In the project directory, you can run:
+#### Consuming data from these APIs:
+- [ApiMedic](https://apimedic.com/) (medical symptoms listing and possible diseases)
+- [GoogleMaps](https://developers.google.com/maps/documentation) (steet map)
+- [Merriam-Webster Dictionary](https://dictionaryapi.com/) (medical dictionary and thesaurus content)
+- [Portal de datos abiertos del Ayuntamiento de Madrid](https://datos.madrid.es/portal/site/egob/menuitem.214413fe61bdd68a53318ba0a8a409a0/?vgnextoid=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextchannel=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextfmt=default) (medical centers in Madrid city)
 
-### `npm start`
+#### Project architecture
+- Frontend: [Symptomapp WEB](https://symptomapp-web.herokuapp.com/)
+- Backend: [Symptomapp API](https://symptomapp-api.herokuapp.com/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Tech info
+- Project bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### Node packages included for Frontend project:
+-  [axios](https://www.npmjs.com/package/axios)
+-  [cors](https://www.npmjs.com/package/cors)
+-  [crypto-js](https://www.npmjs.com/package/crypto-js)
+-  [dotenv](https://www.npmjs.com/package/dotenv)
+-  [google-map-react](https://www.npmjs.com/package/google-map-react)
+-  [react](https://www.npmjs.com/package/react)
+-  [react-bootstrap](https://www.npmjs.com/package/react-bootstrap)
+-  [react-router-dom](https://www.npmjs.com/package/react-router-dom)
 
-### `npm test`
+#### Node packages included for Backend project:
+-  [bcrypt](https://www.npmjs.com/package/bcrypt)
+-  [cors](https://www.npmjs.com/package/cors)
+-  [dotenv](https://www.npmjs.com/package/dotenv)
+-  [http-errors](https://www.npmjs.com/package/http-errors)
+-  [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
+-  [mongoose](https://www.npmjs.com/package/mongoose)
+-  [morgan](https://www.npmjs.com/package/morgan)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Product features
+- Sign-up and login
+<img src="https://github.com/Symptomapp/symptomapp-web/blob/master/src/SignUpLogin.gif?raw=true" />
 
-### `npm run build`
+- Navigation
+<img src="https://github.com/Symptomapp/symptomapp-web/blob/master/src/Navigation.gif?raw=true" />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Profile editing and deleting
+<img src="https://github.com/Symptomapp/symptomapp-web/blob/master/src/User.gif?raw=true" />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Symptom search by list
+<img src="https://github.com/Symptomapp/symptomapp-web/blob/master/src/ListSearch.gif?raw=true" />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Symptom search by map
+<img src="https://github.com/Symptomapp/symptomapp-web/blob/master/src/BodyMap.gif?raw=true" />
 
-### `npm run eject`
+- Possible diseases suggestion and nearby medical centers mapping
+<img src="https://github.com/Symptomapp/symptomapp-web/blob/master/src/Results.gif?raw=true" />
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Authors:
+-  [Pedro J. Sola](https://github.com/pedroscampoy)
+-  [Mario Montero](https://github.com/monteromario)
